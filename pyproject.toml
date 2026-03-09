@@ -1,0 +1,20 @@
+[project]
+name = "botsale"
+version = "0.1.0"
+description = "Telegram sales bot with catalog and 3 delivery modes"
+requires-python = ">=3.11"
+dependencies = [
+  "aiogram>=3.4.1",
+  "sqlalchemy>=2.0.29",
+  "asyncpg>=0.29.0",
+  "redis>=5.0.4",
+  "pydantic>=2.6.4",
+  "pydantic-settings>=2.2.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.1.1", "pytest-asyncio>=0.23.6"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
